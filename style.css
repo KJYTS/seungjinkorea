@@ -1,0 +1,33 @@
+:root{--background:#f6f5f1;--ink:#252c28;--muted:#535d55;--accent:#bf1630;--line:#daddd3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:35px}
+body{margin:0;background:var(--background);color:var(--ink);font-family:'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:7px}
+::selection{background:var(--accent);color:white}
+.header,main{width:calc(100% - 112px);max-width:1320px;margin-inline:auto}
+.header{height:112px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{color:var(--accent);font-family:Arial,sans-serif;font-size:49px;font-weight:900;line-height:1;letter-spacing:-5px;position:relative;padding-right:8px}
+.logo span{position:absolute;right:0;top:-11px;font-size:16px;letter-spacing:0}
+nav{display:flex;align-items:center;gap:43px;font-size:15px;font-weight:600}
+nav a{padding:12px 0;transition:color .2s}
+nav a:hover{color:var(--accent)}
+nav a:last-child{background:var(--ink);color:white;border-radius:40px;padding:14px 24px}
+nav a:last-child:hover{background:var(--accent)}
+.intro{padding:65px 0 70px;display:grid;grid-template-columns:1.05fr 1fr;column-gap:64px;align-items:start}
+.intro-heading{grid-column:1/-1;padding-bottom:43px}
+h1{font-size:clamp(32px,3.7vw,55px);line-height:1.43;font-weight:600;letter-spacing:-2.7px;margin:0;word-break:keep-all}
+em{font-style:normal;color:var(--accent)}
+p{font-size:16px;line-height:2;letter-spacing:-.3px;word-break:keep-all;overflow-wrap:break-word;margin:0}
+.introduction{grid-column:1;grid-row:2;padding-top:5px;color:var(--muted)}
+.introduction p+p{margin-top:26px}
+.company-image{grid-column:2;grid-row:2/4;align-self:stretch;min-height:490px;margin:0;border-radius:20px;overflow:hidden;background:#b4c7c6;position:relative}
+.company-image img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:57% center}
+.products{grid-column:1;grid-row:3;padding-block:28px 5px;color:var(--muted)}
+.customer{grid-column:1/-1;margin-top:48px;background:var(--ink);color:#f4f5ed;border-radius:20px;padding:38px 43px;display:grid;grid-template-columns:1fr 240px;gap:42px;align-items:end}
+.customer p{font-size:15px;color:#e3e7dd}
+.customer .signature{font-size:14px;text-align:right;white-space:nowrap;color:white}
+@media(min-width:1500px){.intro{column-gap:85px;padding-top:80px}.company-image{min-height:530px}p{font-size:17px}}
+@media(max-width:1000px){.header,main{width:calc(100% - 64px)}.header{height:98px}.intro{column-gap:32px;padding-top:48px}h1{letter-spacing:-1.8px}p{font-size:15px}.company-image{min-height:560px}.customer{padding:30px;grid-template-columns:1fr;gap:24px}.customer .signature{text-align:right}}
+@media(max-width:700px){html{scroll-padding-top:20px}.header,main{width:calc(100% - 36px)}.header{height:85px}.logo{font-size:38px;letter-spacing:-4px}.logo span{font-size:13px;top:-8px}nav{gap:17px;font-size:12px}nav a:last-child{background:none;color:var(--ink);border-radius:0;padding:12px 0}nav a:last-child:hover{background:none;color:var(--accent)}.intro{padding:35px 0;grid-template-columns:1fr;gap:0}.intro-heading{grid-column:1;padding-bottom:26px}h1{font-size:clamp(24px,6.5vw,40px);line-height:1.55;letter-spacing:-1.3px}.company-image{grid-column:1;grid-row:2;min-height:0;height:310px;border-radius:13px;margin-bottom:27px}.company-image img{object-position:56% center}.introduction{grid-column:1;grid-row:3;padding:0}.introduction p+p{margin-top:23px}p{font-size:14px;line-height:1.95;letter-spacing:-.2px}.products{grid-column:1;grid-row:4;padding:23px 0 0}.customer{grid-column:1;grid-row:5;margin-top:29px;padding:25px 22px;border-radius:13px;gap:23px}.customer p{font-size:14px}.customer .signature{font-size:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}nav a{transition:none}}
