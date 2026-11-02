@@ -73,3 +73,15 @@ p{font-size:16px;line-height:2;letter-spacing:-.3px;word-break:keep-all;overflow
 @media(min-width:1500px){.intro-heading{min-height:550px}}
 @media(max-width:1000px){.intro{column-gap:32px}.intro-heading{min-height:440px;padding:35px}.intro-heading h1{font-size:36px;letter-spacing:-1.5px}}
 @media(max-width:700px){.intro{padding-top:20px;grid-template-columns:1fr}.intro-heading{min-height:390px;margin-bottom:29px;padding:27px 22px;border-radius:14px}.intro-heading h1{font-size:clamp(23px,6.1vw,38px);letter-spacing:-1.2px;line-height:1.6}.hero-photo img{object-position:56% center}.intro-heading::before{background:linear-gradient(0deg,rgba(241,247,253,.98),rgba(241,247,253,.9) 28%,rgba(241,247,253,.05) 75%)}.introduction{grid-column:1;grid-row:2}.products{grid-column:1;grid-row:3;padding-top:23px}.customer{grid-column:1;grid-row:4;margin-top:23px}}
+
+/* 소개 본문 가독성: 한 열의 읽기 순서와 선명한 본문 */
+.intro{grid-template-columns:minmax(0,1fr)}
+.introduction,.products,.customer{grid-column:1;width:100%;max-width:940px;margin-inline:auto}
+.introduction{grid-row:2}
+.products{grid-row:3;padding:0;margin-top:30px}
+.customer{grid-row:4;margin-top:30px}
+.introduction p,.products p,.customer p{font-size:18px;line-height:1.95;letter-spacing:0;color:#25394c;word-break:keep-all;overflow-wrap:break-word}
+.introduction p+p{margin-top:30px}
+.customer .signature{font-size:16px;line-height:1.8;margin-top:34px;color:#25394c}
+.contact address,.contact-info,.contact-info p{font-size:16px;line-height:1.9;color:#344b60}
+@media(max-width:700px){.introduction p,.products p,.customer p{font-size:16px;line-height:1.9}.products,.customer{margin-top:25px;padding:0}.introduction p+p{margin-top:25px}.customer .signature{font-size:14px;margin-top:28px}.contact address,.contact-info,.contact-info p{font-size:14px}}
