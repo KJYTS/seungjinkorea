@@ -85,3 +85,19 @@ p{font-size:16px;line-height:2;letter-spacing:-.3px;word-break:keep-all;overflow
 .customer .signature{font-size:16px;line-height:1.8;margin-top:34px;color:#25394c}
 .contact address,.contact-info,.contact-info p{font-size:16px;line-height:1.9;color:#344b60}
 @media(max-width:700px){.introduction p,.products p,.customer p{font-size:16px;line-height:1.9}.products,.customer{margin-top:25px;padding:0}.introduction p+p{margin-top:25px}.customer .signature{font-size:14px;margin-top:28px}.contact address,.contact-info,.contact-info p{font-size:14px}}
+
+/* 회사소개: 여백과 글자 위계로 정돈한 편집형 레이아웃 */
+.intro{padding-bottom:60px}
+.intro-heading{margin-bottom:0}
+.company-story{margin-top:24px;background:#fff;border:1px solid #e3eaf0;border-radius:20px;padding:60px;display:grid;grid-template-columns:180px minmax(0,1fr);gap:60px}
+.story-label{font-size:17px;font-weight:600;letter-spacing:-.5px;line-height:1.5;margin:5px 0;color:#182b40}
+.story-label span{display:block;margin-top:25px;font-size:36px;font-weight:400;color:#9aafbe}
+.story-copy{max-width:800px}
+.introduction,.products,.customer{width:auto;max-width:none;margin:0;padding:0}
+.introduction p,.products p,.customer p{font-size:17px;line-height:1.95;letter-spacing:-.35px;color:#465460}
+.introduction p:first-child{font-size:24px;line-height:1.75;letter-spacing:-.8px;font-weight:500;color:#1c2f40;padding-bottom:32px;border-bottom:1px solid #e3eaf0}
+.introduction p+p{margin-top:30px}
+.products,.customer{margin-top:25px}
+.customer .signature{font-size:14px;font-weight:500;margin-top:32px;color:#263b4c}
+@media(max-width:1000px){.company-story{padding:40px;grid-template-columns:110px minmax(0,1fr);gap:35px}.introduction p:first-child{font-size:22px}}
+@media(max-width:700px){.intro{padding-bottom:36px}.company-story{margin-top:18px;padding:27px 23px;border-radius:14px;grid-template-columns:minmax(0,1fr);gap:24px}.story-label{font-size:13px;display:flex;justify-content:space-between;align-items:center;margin:0}.story-label span{display:inline;margin:0;font-size:23px}.introduction p:first-child{font-size:19px;line-height:1.8;letter-spacing:-.6px;padding-bottom:24px}.introduction p,.products p,.customer p{font-size:15px;line-height:1.95;letter-spacing:-.2px}.introduction p+p{margin-top:24px}.products,.customer{margin-top:22px}.customer .signature{font-size:12px;margin-top:27px}}
