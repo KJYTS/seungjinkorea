@@ -33,7 +33,7 @@ p{font-size:16px;line-height:2;letter-spacing:-.3px;word-break:keep-all;overflow
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}nav a{transition:none}}
 
 /* 제공된 원본 로고와 회사 사진 */
-.logo{display:block;width:66px;height:64px;padding:0;line-height:0}
+.logo{display:block;width:52px;height:50px;padding:0;line-height:0;flex-shrink:0}
 .logo img{display:block;width:100%;height:100%;object-fit:contain}
 .company-image img{object-position:center}
-@media(max-width:700px){.logo{width:51px;height:50px}.company-image{height:auto;aspect-ratio:966/768}}
+@media(max-width:700px){.logo{width:44px;height:42px}.company-image{height:auto;aspect-ratio:966/768}}
